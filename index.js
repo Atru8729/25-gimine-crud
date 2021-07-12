@@ -1,9 +1,9 @@
-const Gimine = require('./Gimine');
+const Gimine = require('./Gimine.js');
 
-const bajorai = new Gimine()
+const bajorai = new Gimine();
 
-bajorai.gime({ name: 'Augustas', year: 2000 });
-bajorai.gime({ name: 'Barbora', year: 1998 });
+bajorai.gime({ name: 'Augustas', year: 2000, gender: false });
+bajorai.gime({ name: 'Barbora', year: 1998, gender: true });
 
 bajorai.giminesMedis();
 // 1. Augustas gime 2000 metais ir nera vedes.
@@ -36,4 +36,3 @@ bajorai.skyrybos(0);
 
 bajorai.giminesMedis();
 // 1. Augustas gime 2000 metais ir nera vedes.
-
